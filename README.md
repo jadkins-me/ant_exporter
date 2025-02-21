@@ -12,7 +12,7 @@ The core application is written in Python, and hosted in this Repo - The instruc
 
 The main control is provided by a configuration file config.yml, a demo one is included, but you will need to edit this to meet your requirements.
 
-The config.yml file defines the RPC enpoints for the blockchains, that the application will query - please be mindfull that these are PUBLIC endpoints, so be careful on how many Wallet addresses you add.  The application is limited to batch the queries every 30 minutes, to avoid rate limiting.  If you wish to query more wallets, then you should look at hosting your own RPC endpoint for the chain (beyond the scope of how to set this up)
+The config.yml file defines the RPC endpoints for the blockchains, that the application will query - please be mindfull that these are PUBLIC endpoints, so be careful on how many Wallet addresses you add.  The application is limited to batch the queries every 30 minutes, to avoid rate limiting.  If you wish to query more wallets, then you should look at hosting your own RPC endpoint for the chain (beyond the scope of how to set this up)
 
 ## Dashboard
 
