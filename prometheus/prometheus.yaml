@@ -2,15 +2,6 @@ global:
   scrape_interval: 10s
   scrape_timeout: 10s
 
-query:
-  lookback-delta: 5m
-
-log_level: info
-
-storage.tsdb:
-  retention.time: 365d
-  max_block_duration: 2h
-
 scrape_configs:
   - job_name: 'ant_exporter'
     scrape_interval: 60s
