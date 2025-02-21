@@ -1,0 +1,42 @@
+chains:
+  arbone: https://arb1.arbitrum.io/rpc
+  arbsop: https://sepolia-rollup.arbitrum.io/rpc
+
+tokens:
+  arbone:
+    - symbol: ETH     # Gas
+      contract: "0"
+      decimal: 18
+    - symbol: ANT     # Autonomi
+      contract: "0xa78d8321B20c4Ef90eCd72f2588AA985A4BDb684"
+      decimal: 18 
+  arbsop:
+    - symbol: ETH     # Gas
+      contract: "0"
+      decimal: 18
+    - symbol: ANT     # Autonomi
+      contract: "0xBE1802c27C324a28aeBcd7eeC7D734246C807194"
+      decimal: 18   
+
+wallets:
+  - name: safe001
+    address: "0x000000000000000000000000000000000000000"
+    track_for:
+      arbone:
+        - ETH
+        - ANT
+      arbsop:
+        - ANT
+    labels:
+      type: portforward
+  - name: safe002
+    address: "0x000000000000000000000000000000000000000"
+    track_for:
+      arbone:
+        - ETH
+        - ANT
+      arbsop:
+        - ANT
+    labels:
+      type: homenetwork
+
