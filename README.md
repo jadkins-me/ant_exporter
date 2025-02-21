@@ -1,6 +1,6 @@
 ## Ant Exporter
 
-**This is an Unofficial Utility, not supported by Autonomi / Maidsafe : please follow discussions on the Forumn**
+**This is an Unofficial Utility, not supported by Autonomi / Maidsafe : please follow discussions on the Forum**
 
 A self hosted Docker, Prometheus, Grafana and Block-Chain scrapper, to allow visulisation and monitoring for your ERC-20 Wallets.
 
