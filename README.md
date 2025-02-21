@@ -24,6 +24,10 @@ There is a very basic Dashboard, to get you started - Any changes you make to th
 
 This has been tested on Debian 12 fresh install, YMMV on different distro's.
 
+* It's assumed you are the `root` user on the machine to install this application - It is also completely possible to `update` docker to allow this all to be done as a `normal` user, by adding the account to the docker group - please read up on the implications of this.
+
+* I love `sudo` and everything I do has `sudo` infront of it - sorry that isn't supported... If you need to elevate your normal user account to `root` - please do `sudo su -` to bump your permissions.
+
 1) Update the Linux distro applying packge updated : `apt update && apt upgrade -y`
 
 2) Install docker, and git to allow the code to be used : `apt install docker-compose git`
@@ -53,7 +57,7 @@ Once you have setup the config.yml you can continue to build the application...
 
 This will create a docker image, that contains all the code and utilitys needed to run the exporter.  You can view the current images on the machine with : `docker images`
 
-6) You can launch the application with : `docker-compose up -d`  This will start the application is Daemon mode, running in the background - with the default option of auto-restarting if you reboot the machine.
+6) You can launch the application with : `docker-compose up -d`  This will start the application in Daemon mode, running in the background - with the default option of auto-restarting if you reboot the machine.
 
 7) If you want to shut all the applications down, for example, to edit the `config.yml` file - then you can use : `docker-compose down`
 
@@ -153,3 +157,11 @@ The ID's below are what this source will generate through docker-compose - if yo
 Prometheus Data source unique ID : `8hyfantpro01`
 
 Grafana Dashboard - Autonomi Arb Wallet Exporter v1 : UID : `k5k3antdash34`
+
+#FAQ
+
+### (Q) Can I import the history for a wallet
+(A) Unfortunately, the application does not support going back in time, to query the block-chain to get historic balances for and address - this "might" get added in the future.
+
+### (Q) I don't like all the data being in DOCKER ? can I save the data locally
+(A) Absolutely, the docker-compose.yml file can be updated to store the DATA locally on your machine in a directory of you choice - due to security issues around setting this up, it's not practical to provide that guidance here.
