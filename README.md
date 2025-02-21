@@ -1,6 +1,6 @@
 ## Ant Exporter
 
-**This is an Unofficial Utility, not supported by Autonomi / Maidsafe : please follow discussions on the Forum**
+**This is an Unofficial Utility, not supported by Autonomi / Maidsafe : please follow discussions on the ![Forum](https://forum.autonomi.community/t/ant-exporter-arbitrum-one-and-other-erc-20-block-exporter/41277)**
 
 A self hosted Docker, Prometheus, Grafana and Block-Chain scrapper, to allow visulisation and monitoring for your ERC-20 Wallets.
 
