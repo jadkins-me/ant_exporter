@@ -1,6 +1,8 @@
 ## Ant Exporter
 
-This project provides a self hosted Docker, Prometheus, Grafana and Block-Chain scrapper, to allow visulisation and monitoring for your ERC-20 Wallets.
+**This is an Unofficial Utility, not supported by Autonomi / Maidsafe : please follow discussions on the Forumn**
+
+A self hosted Docker, Prometheus, Grafana and Block-Chain scrapper, to allow visulisation and monitoring for your ERC-20 Wallets.
 
 Docker is the engine, which allows the code to be run on lots of different Linux machines and Architetures, while it's not tested, it might even work on WSL2 (Windows Subsystem for Linux) on Microsoft.
 
