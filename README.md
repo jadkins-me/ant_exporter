@@ -165,3 +165,6 @@ Grafana Dashboard - Autonomi Arb Wallet Exporter v1 : UID : `k5k3antdash34`
 
 ### (Q) I don't like all the data being in DOCKER ? can I save the data locally
 (A) Absolutely, the docker-compose.yml file can be updated to store the DATA locally on your machine in a directory of you choice - due to security issues around setting this up, it's not practical to provide that guidance here.
+
+### (Q) I've installed the application, and it's been running for 5 minutes and the Dashboard is empty!
+(A) Patience, it can take up to 1hr for the Dashboard to start to populate - if there are NO errors in the `docker-compose logs` then it's a waiting game.
