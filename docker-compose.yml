@@ -12,9 +12,9 @@ services:
       dockerfile: Dockerfile
     environment:
       - HOST=0.0.0.0
-      - LISTEN=8080
+      - LISTEN=8090
     ports:
-      - "8080:8080"
+      - "8090:8090"
     restart: unless-stopped
     volumes:
       - ./config.yml:/usr/src/app/config.yml
@@ -22,7 +22,7 @@ services:
       build:
         platform: linux/amd64,linux/arm64
     healthcheck:
-      test: ["CMD-SHELL", "curl --fail http://localhost:8080/metrics || exit 1"]
+      test: ["CMD-SHELL", "curl --fail http://localhost:8090/metrics || exit 1"]
       interval: 30s
       timeout: 10s
       retries: 3

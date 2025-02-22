@@ -6,4 +6,4 @@ scrape_configs:
   - job_name: 'ant_exporter'
     scrape_interval: 60s
     static_configs:
-      - targets: ['ant_exporter:8080']
+      - targets: ['ant_exporter:8090']

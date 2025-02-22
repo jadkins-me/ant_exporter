@@ -17,7 +17,7 @@ ENV PATH="/usr/src/app/.local/bin:${PATH}"
 RUN pip install --no-cache-dir -r requirements.txt
 
 ENV HOST=0.0.0.0
-ENV LISTEN=8080
+ENV LISTEN=8090
 ENV CONFIG_FILE=./config.yml
 
 # Run the main.py script

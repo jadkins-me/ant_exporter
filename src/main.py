@@ -33,7 +33,7 @@ def main():
     load_dotenv()
 
     #pass any changes
-    listen = os.getenv("LISTEN") or "8080"              # default port we listen on for prometheus scrape
+    listen = os.getenv("LISTEN") or "8090"              # default port we listen on for prometheus scrape
     config_file = os.getenv("CONFIG_FILE") or "./config.yml"    # config file containing token info
     host = os.getenv("HOST") or "0.0.0.0"       # host IP to bind to, by default 0.0.0.0 is all/* ipv4
 

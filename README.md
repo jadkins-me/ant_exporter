@@ -69,7 +69,7 @@ This will create a docker image, that contains all the code and utilitys needed 
 
 By default the application will bind to all network adapters `0.0.0.0`
 
-By default the application will bind to port `8080`
+By default the application will bind to port `8090`
 
 The Grafana Dashboard will be available by default on `http://your_ip_address_of_machine:3000`
 
